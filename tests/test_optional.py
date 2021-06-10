@@ -2,7 +2,7 @@ import unittest
 from python_optional import optional
 
 
-class test_ValidateDateRule(unittest.TestCase):
+class test_optiona(unittest.TestCase):
     def test_returns_value_if_key_exists(self):
         data = {'a': 'b'}
 
