@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name='python_optional',
     packages=['python_optional'],
-    version='1.0.0',
+    version='CURRENT_VERSION',
     license='MIT',
     description='Returns None if a dict key does not exist',
     long_description=long_description,
@@ -14,7 +14,7 @@ setup(
     author='Roger Vilà',
     author_email='rogervila@me.com',
     url='https://github.com/rogervila/python_optional',
-    download_url='https://github.com/rogervila/python_optional/archive/1.0.0.tar.gz',
+    download_url='https://github.com/rogervila/python_optional/archive/CURRENT_VERSION.tar.gz',
     keywords=['optional dict key', 'catch keyerror'],
     install_requires=[],
     classifiers=[
