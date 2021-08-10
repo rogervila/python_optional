@@ -7,3 +7,6 @@ class optional:
             return self.data[key]
         except KeyError:
             return None
+
+    def __getattr__(self, name):
+        return self.get(name)

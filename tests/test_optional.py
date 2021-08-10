@@ -48,6 +48,36 @@ class test_optiona(unittest.TestCase):
             None
         )
 
+    def test_returns_object_properties_if_set(self):
+        class Something():
+            foo = 'bar'
+
+        data = {'a': Something(), 'b': 123}
+
+        self.assertEqual(
+            optional(data).get('a').foo,
+            'bar'
+        )
+
+        self.assertEqual(
+            optional(data).get('b'),
+            123
+        )
+
+        self.assertIsNone(optional(data).get('z'))
+
+        self.assertEqual(
+            optional(data).a.foo,
+            'bar'
+        )
+
+        self.assertEqual(
+            optional(data).b,
+            123
+        )
+
+        self.assertIsNone(optional(data).z)
+
 
 if __name__ == '__main__':
     unittest.main()
