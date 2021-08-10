@@ -23,5 +23,8 @@ data = {
 }
 
 result = optional(data).get('a') # 'b'
+result = optional(data).a # 'b'
+
 result = optional(data).get('z') # None
+result = optional(data).z # None
 ```
