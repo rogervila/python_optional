@@ -1,5 +1,6 @@
 # Python Optional
 
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rogervila_python_optional&metric=coverage)](https://sonarcloud.io/dashboard?id=rogervila_python_optional)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rogervila_python_optional&metric=alert_status)](https://sonarcloud.io/dashboard?id=rogervila_python_optional)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=rogervila_python_optional&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=rogervila_python_optional)
 
